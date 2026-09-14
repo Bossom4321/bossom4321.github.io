@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>ITIS3135 First Course Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>William Dodson ~ Wild Deer | ITIS3135 | Course Overview</title>
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <link rel="stylesheet" href="styles/default.css">
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>I am William Dodson and this is my ITIS3135 First Course Page.</h1>
+        <!-- page wrapper keeps the course content centered and easy to read -->
+        <div class="page">
+            <div data-include="components/header.html"></div>
+
+            <main>
+                <!-- this card contains the overview text and course navigation -->
+                <section class="card" aria-labelledby="course-overview">
+                    <h2 id="course-overview">Course Overview</h2>
+                    <figure>
+                        <!-- this figure adds the course graphic to the overview page -->
+                        <img src="images/course_icon.svg" alt="ITIS3135 course illustration" width="220" height="220">
+                    </figure>
+                    <p>Welcome to my ITIS3135 course site. This page is dedicated to my work in front-end web development, and it is intended to help visitors navigate the course pages I have created.</p>
+                    <p>This site includes my course introduction, contract, and overview pages so visitors can navigate my work clearly and consistently.</p>
+                    <ul>
+                        <li><a href="introduction.html">Open the course introduction page</a></li>
+                        <li><a href="contract.html">Open the course contract page</a></li>
+                        <li><a href="about.html">Open the about page</a></li>
+                    </ul>
+                    <a class="home-link" href="../">Return to my personal home page</a>
+                </section>
+            </main>
+
+            <div data-include="components/footer.html"></div>
+        </div>
+        <script src="scripts/include_components.js"></script>
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
     </body>
 </html>

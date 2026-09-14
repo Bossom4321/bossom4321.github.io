@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>William Dodson Designs</title>
+    <style>
+        :root {
+            --bg: #f4efe7;
+            --surface: #fffdfb;
+            --ink: #1f2430;
+            --muted: #4b5867;
+            --primary: #0f4c5c;
+            --secondary: #f7b267;
+            --tertiary: #e76f51;
+            --accent: #5b8e7d;
+            --line: #d9d1c7;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        header, main, footer {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #f8fbff;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .brand-row {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: var(--surface);
+            color: var(--primary);
+            display: grid;
+            place-items: center;
+            font-weight: 800;
+            font-size: 1.5rem;
+            border: 4px solid rgba(255,255,255,0.65);
+        }
+
+        h1 {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(2.1rem, 4vw, 3rem);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            color: var(--primary);
+        }
+
+        main {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .intro {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 2px solid var(--line);
+            padding: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 1rem 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.65rem;
+        }
+
+        li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--tertiary);
+            font-weight: 700;
+        }
+
+        .contact {
+            background: #fdf5ed;
+            border: 2px solid var(--secondary);
+            padding: 1.25rem;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #1a2a35;
+            color: #ebf4f8;
+            padding-top: 1rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .footer-line {
+            margin: 0;
+        }
+
+        @media (max-width: 760px) {
+            .intro {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand-row">
+            <div class="logo" aria-label="William Dodson Designs logo">WD</div>
+            <div>
+                <h1>William Dodson Designs</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro" aria-labelledby="home-heading">
+            <div class="card">
+                <h2 id="home-heading">Home</h2>
+                <p>William Dodson Designs is a modern web design and development studio focused on clean digital experiences, straightforward communication, and user-centered solutions for individuals and small businesses.</p>
+                <p>We help clients turn rough ideas into polished websites that feel professional, accessible, and easy to use. Our work blends visual clarity, responsive design, and practical strategy to create experiences that support real goals.</p>
+                <ul>
+                    <li>Strategic planning for modern web presence</li>
+                    <li>Responsive design and front-end implementation</li>
+                    <li>Brand-focused content organization</li>
+                    <li>Accessibility-minded development</li>
+                    <li>Clear communication from concept to launch</li>
+                    <li>Flexible support for growing digital needs</li>
+                </ul>
+            </div>
+
+            <aside class="card contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact</h2>
+                <p><strong>Phone:</strong> To be provided</p>
+                <p><strong>Email:</strong> To be provided</p>
+                <p><strong>Address:</strong> To be provided</p>
+            </aside>
+        </section>
+
+        <section class="card" aria-labelledby="services-heading">
+            <h2 id="services-heading">Services</h2>
+            <p>We design and develop websites that help clients present their work clearly, communicate their value, and stay easy to navigate on desktop and mobile devices. We focus on strong structure, readable layouts, accessible color choices, and polished interactions that feel intentional and professional.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-line">Page created by William Dodson Designs ©2026</p>
+    </footer>
+</body>
+</html>

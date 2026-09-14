@@ -1,9 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Website Root</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>William Dodson | Personal Home Page</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <style>
+        :root {
+            --bg: #f6f1e8;
+            --surface: #fdfaf5;
+            --ink: #1f2a37;
+            --muted: #4a5867;
+            --accent: #2f5d50;
+            --accent-dark: #1f4339;
+            --border: #d9c7a5;
+            --highlight: #efe1be;
+            --link: #2d3f3a;
+            --link-visited: #2d3f3a;
+            --link-hover: #1b2a26;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        p, li, a {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 1rem 3rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: #eef7f4;
+            border-radius: 0;
+            padding: 2rem 1.5rem 1.25rem;
+            box-shadow: none;
+        }
+
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            margin: 0 0 0.35rem;
+            font-size: clamp(2.2rem, 4vw, 3rem);
+        }
+
+        .tagline {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #edf7f2;
+            font-style: italic;
+        }
+
+        nav {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .nav-link,
+        .course-link {
+            color: var(--link);
+            background: var(--highlight);
+            border: 2px solid var(--accent);
+            border-radius: 0;
+            padding: 0.6rem 0.9rem;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .nav-link:visited,
+        .course-link:visited {
+            color: var(--link-visited);
+        }
+
+        .nav-link:hover,
+        .nav-link:focus,
+        .course-link:hover,
+        .course-link:focus {
+            color: var(--link-hover);
+            background: #f8ecb6;
+        }
+
+        main {
+            margin-top: 1.75rem;
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 2px solid var(--border);
+            border-radius: 0;
+            padding: 1.5rem;
+        }
+
+        h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            margin-top: 0;
+            color: var(--accent-dark);
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        ul {
+            margin: 0.5rem 0 0 1.25rem;
+            padding: 0;
+        }
+
+        li + li {
+            margin-top: 0.5rem;
+        }
+
+        figure {
+            margin: 0 0 1rem;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 2px solid var(--border);
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 700px) {
+            .page {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a href = "itis3135/">Click to go to my ITIS3135 Site</a> 
+    <!-- page wrapper keeps the content centered and organized -->
+    <div class="page">
+        <header>
+            <h1>William Dodson</h1>
+            <p class="tagline"><em>Personal home page and portfolio</em></p>
+            <nav aria-label="Main navigation">
+                <a class="nav-link" href="#about-me">About Me</a>
+                <a class="nav-link" href="#course-link-heading">Course Work</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- main content area contains the page sections -->
+            <section class="card" aria-labelledby="about-me">
+                <h2 id="about-me">Personal Home Page</h2>
+                <figure>
+                    <!-- this figure contains the profile image for the personal home page -->
+                    <img src="images/profilepicture_optimized.jpg" alt="Headshot of William Dodson" width="220" height="220">
+                </figure>
+                <p>My name is William Dodson, and I go by the name "William Dodson ~ Wild Deer." I have been programming for a good decade of my life, and I continue to learn more about computers every day. I hope to build a strong foundation in technology and eventually understand a broad range of computing concepts.</p>
+                <ul>
+                    <li><strong>Personal Background:</strong> I have lived in North Carolina for most of my life, aside from a brief period in Washington state.</li>
+                    <li><strong>Professional Background:</strong> I worked at CVS for a year before starting college.</li>
+                    <li><strong>Academic Background:</strong> I am studying Computer Science with a focus on Cyber Security.</li>
+                    <li><strong>Primary Work Computer:</strong> Dual-booting laptop, Windows 11 and Linux.</li>
+                    <li><strong>Primary Work Location:</strong> Atkins Library at the university.</li>
+                    <li><strong>Alternate Computer &amp; Location:</strong> Desktop computer at home.</li>
+                    <li><strong>Favorite Reminder:</strong> I am a very tall man.</li>
+                </ul>
+                <p>Programming is all fun and games until it is time to fix the bugs. I enjoy learning, solving problems, and creating tools that help people work more effectively and with less frustration.</p>
+            </section>
+
+            <section class="card" aria-labelledby="course-link-heading">
+                <h2 id="course-link-heading">Course Work</h2>
+                <p>This page is about me and my interests. My course page is where I present the work for this class.</p>
+                <a class="course-link" href="itis3135/" aria-label="Visit my ITIS3135 course page">ITIS3135 course page</a>
+            </section>
+        </main>
+
+        <footer>
+            <p><a href="itis3135/williamdodsondesigns.co/" aria-label="Visit William Dodson Designs">Page created by William Dodson Designs</a> ©2026</p>
+        </footer>
+    </div>
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
 </html>

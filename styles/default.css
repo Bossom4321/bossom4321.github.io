@@ -1,15 +1,15 @@
 :root {
-    --bg: #f3f5f7;
-    --surface: #fdfdff;
-    --ink: #1d2430;
-    --muted: #4d5c6b;
-    --accent: #1d4d7a;
-    --accent-dark: #12365d;
-    --border: #d9e1ea;
-    --highlight: #edf5ff;
-    --link: #2d2d2d;
-    --link-visited: #2d2d2d;
-    --link-hover: #111111;
+    --bg: #f6f1e8;
+    --surface: #fdfaf5;
+    --ink: #1f2a37;
+    --muted: #4a5867;
+    --accent: #2f5d50;
+    --accent-dark: #1f4339;
+    --border: #d9c7a5;
+    --highlight: #efe1be;
+    --link: #2d3f3a;
+    --link-visited: #2d3f3a;
+    --link-hover: #1b2a26;
 }
 
 * { box-sizing: border-box; }
@@ -34,21 +34,22 @@ p, li, a {
 
 header {
     background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-    color: #edf4ff;
-    border-radius: 0;
+    color: #eef7f4;
+    border-radius: 12px;
     padding: 2rem 1.5rem 1.25rem;
-    box-shadow: none;
+    box-shadow: 0 6px 18px rgba(31, 67, 57, 0.2);
 }
 
 h1 {
     font-family: Georgia, "Times New Roman", serif;
     margin: 0 0 0.35rem;
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: clamp(2.2rem, 4vw, 3rem);
 }
 
 .tagline {
     margin: 0;
-    color: #e7f0ff;
+    font-size: 1.1rem;
+    color: #edf7f2;
     font-style: italic;
 }
 
@@ -60,27 +61,27 @@ nav {
 }
 
 .nav-link,
-.home-link {
+.course-link {
     color: var(--link);
     background: var(--highlight);
     border: 2px solid var(--accent);
-    border-radius: 0;
+    border-radius: 8px;
     padding: 0.6rem 0.9rem;
     text-decoration: none;
     font-weight: 700;
 }
 
 .nav-link:visited,
-.home-link:visited {
+.course-link:visited {
     color: var(--link-visited);
 }
 
 .nav-link:hover,
 .nav-link:focus,
-.home-link:hover,
-.home-link:focus {
+.course-link:hover,
+.course-link:focus {
     color: var(--link-hover);
-    background: #dfeeff;
+    background: #f8ecb6;
 }
 
 main {
@@ -92,7 +93,7 @@ main {
 .card {
     background: var(--surface);
     border: 2px solid var(--border);
-    border-radius: 0;
+    border-radius: 12px;
     padding: 1.5rem;
 }
 
@@ -100,19 +101,20 @@ h2 {
     font-family: Georgia, "Times New Roman", serif;
     margin-top: 0;
     color: var(--accent-dark);
+    font-size: 1.6rem;
 }
 
 h3 {
     font-family: Georgia, "Times New Roman", serif;
 }
 
-.display-name {
-    margin: 0 0 1rem;
-    font-size: clamp(1.6rem, 3vw, 2.25rem);
-    font-weight: 700;
-    color: var(--accent-dark);
-    white-space: nowrap;
-    line-height: 1.2;
+ul {
+    margin: 0.5rem 0 0 1.25rem;
+    padding: 0;
+}
+
+li + li {
+    margin-top: 0.5rem;
 }
 
 figure {
@@ -120,23 +122,10 @@ figure {
     text-align: center;
 }
 
-.intro-figure {
-    max-width: 240px;
-    margin: 0 auto 1.5rem;
-}
-
-blockquote {
-    margin: 1.25rem 0;
-    padding: 0.75rem 1rem;
-    border-left: 4px solid var(--accent);
-    background: var(--highlight);
-    color: var(--ink);
-}
-
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 0;
+    border-radius: 12px;
 }
 
 footer {
@@ -157,4 +146,3 @@ footer {
         flex-direction: column;
     }
 }
-
